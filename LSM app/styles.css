@@ -1,0 +1,17 @@
+*{
+    background-color: black;
+    font-family: "Bookman Old Style", monospace;
+    color: white;
+}
+nav{
+    text-align: center;
+}
+a{
+    color: white;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
