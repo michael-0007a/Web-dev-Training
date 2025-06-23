@@ -3,15 +3,60 @@
     font-family: "Bookman Old Style", monospace;
     color: white;
 }
-nav{
+h3{
     text-align: center;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-bottom: 5rem;
+
+}
 a{
-    color: white;
-    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header{
     text-align: center;
 }
 
+.faq-card{
+    background-color: #111;
+    padding: 1rem;
+    /*margin: 0.5rem 0;*/
+    border: rgba(0, 60, 255, 0.18) solid 2px;
+    border-left: 4px solid #003cff;
+    border-radius: 4px;
+    box-shadow: #003cff 2px 5px 10px;
+}
+
+faq-card:hover{
+    box-shadow: #003cff 3px 3px 5px 2px;
+}
+main{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+/*hr{*/
+/*    color: aquamarine !important;*/
+/*}*/
+
+.container{
+    border: 1px inset rgba(0, 60, 255, 0.18);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: #003cff 0px 0px 10px;
+}
+
+.container:hover{
+    box-shadow: #003cff 1px 1px 5px 3px;
+}
