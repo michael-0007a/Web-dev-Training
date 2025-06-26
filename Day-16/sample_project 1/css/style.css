@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+
+}
+.row{
+    background-color: #2f2f2f;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    padding: 10px;
+}
+.row .container .logo{
+    font-size: 45px;
+    top: 12px;
+    /*font-family: lobster, sans-serif;*/
+}
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+}
+.row .container .menu ul{
+    display: flex;
+}
+.row .container .menu ul li{
+    padding: 20px;
+    font-weight: bolder;
+    transition: background-color 0.1s ,color 0.1s ;
+    border-radius: 45px;
+
+
+}
+.row .container .menu ul li:hover{
+    background-color: white;
+}
+.row .container .menu ul li:hover a{
+    background-color: white;
+    border-radius: 10px;
+    color: #2f2f2f;
+}
+.row2{
+    background-color: #f1f1f1;
+
+}
+.row2 .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.row2 .left-content h1{
+    margin-bottom: 20px;
+}
+
+.row2 .left-content p{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.row2 .left-content button{
+    margin-top: 30px;
+    padding: 7px 30px;
+    background-color: #fa9641;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.row3{
+    background-color: #ffffff;
+    width: 80%;
+    margin: 80px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row3 .card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.row3 h1{
+    margin-bottom: 30px;
+}
+
+.row3 .card-container{
+    display: flex;
+}
+
+.row3 .card-container .card h2{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.row3 .card-container .card p{
+    padding-right: 15%;
+}
+
+.row3 .card-container .card button{
+    margin-top: 30px;
+    padding: 7px 30px;
+    background-color: #fa9641;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.row4{
+    background-color: #2f2f2f;
+    padding-top: 75px;
+    padding-bottom: 20px;
+
+}
