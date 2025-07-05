@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="return openWin()">open</button>
+<button onclick="return closeWin()">close</button>
+
+<script>
+    var win;
+
+    function openWin() {
+        win = window.open("https://www.mallareddyuniversity.ac.in/", "", "width=800,height=600");
+        console.log(win.screen.availHeight);
+        console.log(win.screen.availWidth);
+    }
+
+    function closeWin() {
+        if (win) {
+            win.close();
+        }
+    }
+</script>
+</body>
+</html>

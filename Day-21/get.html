@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get</title>
+</head>
+<body>
+<a href="https://www.google.com">get</a> <br>
+<button onclick="getURL()">get</button>
+<p id="demo"></p>
+</body>
+
+<script>
+    function getURL() {
+        var x = document.getElementsByTagName("a")[0].getAttribute("href");
+        document.getElementById("demo").innerHTML = x;
+    }
+
+</script>
+</html>

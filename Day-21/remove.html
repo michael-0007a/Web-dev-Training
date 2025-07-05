@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get</title>
+</head>
+<body>
+<h3>dfesfser</h3>
+<a href="https://www.google.com">https://www.google.com</a> <br>
+<button onclick="setURL()">set</button>
+<button onclick="remove()">get</button>
+<p id="demo"></p>
+</body>
+
+
+
+<script>
+    function setURL() {
+        var x = "background-color: yellow; color: red; font-size: 20px;";
+        document.getElementsByTagName("h3")[0].setAttribute("style", x);
+    }
+
+    function remove() {
+        document.getElementsByTagName("h3")[0].removeAttribute("style");
+    }
+
+    function datamethod() {
+        var today = new Date();
+        document.getElementById("demo").innerHTML = today;
+    }
+
+
+</script>
+</html>

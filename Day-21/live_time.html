@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="liveTime()" style="background-color:black; color: white;">
+    <h1 id="demo" style="font-size: 100px; text-align: center"></h1>
+
+<script>
+    function liveTime() {
+        var today = new Date();
+        document.getElementById("demo").innerHTML = today.toLocaleTimeString();
+    }
+
+    setInterval(liveTime, 100); // Update every second
+</script>
+</body>
+
+</html>

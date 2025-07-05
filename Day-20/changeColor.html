@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Welcome to MRU!</h1>
+<button id="btn" onclick="changeBg()">click to change background</button>
+<script>
+    function changeBg(){
+        var r = Math.floor(Math.random() * 255);
+        var g = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+        console.log(r,g,b);
+        var bgcolor="rgb("+r+","+g+","+b+")";
+        document.body.style.backgroundColor=bgcolor;
+    }
+</script>
+</body>
+</html>

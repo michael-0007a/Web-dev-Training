@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            text-align: justify;
+            border: black solid 1px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: black 0px 0px 10px;
+          }
+    </style>
+</head>
+<body>
+<div class="container">
+<label>
+<input type="radio" name="size" id="small">Small
+<input type="radio" name="size" id="medium" checked>Medium
+<input type="radio" name="size" id="large">Large
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore est exercitationem magni modi mollitia quia sed voluptatibus? Ad architecto culpa dolores ea eaque, eum incidunt ipsam ipsum labore molestias nesciunt quas quia quis recusandae rem repellat, repellendus reprehenderit repudiandae similique totam velit voluptate voluptates. Consectetur, deserunt enim exercitationem fugiat iste officiis optio provident reiciendis rerum suscipit vitae voluptatibus! Ad amet, corporis dicta dolores enim exercitationem impedit ipsum iusto odit placeat, quis repudiandae sunt suscipit? A aliquid asperiores consequatur eveniet fugit perspiciatis? Architecto commodi delectus illo, perferendis sequi tempora voluptates? A accusamus aliquam amet asperiores consectetur consequatur dolore dolores eaque error, est et eveniet excepturi facere laborum laudantium minima modi molestias nobis, officia quas quasi quibusdam reiciendis sed soluta veritatis voluptate voluptates voluptatibus! Ad consectetur corporis cumque debitis doloribus dolorum facilis id in minus, nulla officiis quae quia, quis quos ratione rerum, saepe soluta temporibus ullam vero! Ab accusamus ad architecto aspernatur cumque deleniti eligendi expedita hic id, ipsum magnam maxime neque nisi pariatur provident quis quod rerum tenetur vitae voluptas? Eos libero magnam molestiae. Aperiam, commodi corporis cumque debitis distinctio, eius expedita ipsum, laudantium minima obcaecati officia recusandae repellat voluptate! Assumenda distinctio explicabo pariatur perspiciatis praesentium provident, rerum similique.</p>
+
+</label>
+</div>
+
+<script>
+    const small = document.getElementById("small");
+    const medium = document.getElementById("medium");
+    const large = document.getElementById("large");
+
+    small.addEventListener("click",
+        function() {
+        document.querySelector(".container").style.fontSize = "12px";
+    }
+    );
+    medium.addEventListener("click", function()
+    {
+        document.querySelector(".container").style.fontSize = "16px";
+    });
+    large.addEventListener("click",
+        function() {
+        document.querySelector(".container").style.fontSize = "20px";
+    }
+    );
+    // Set default size to medium
+    document.querySelector(".container").style.fontSize = "16px";
+
+</script>
+</body>
+</html>

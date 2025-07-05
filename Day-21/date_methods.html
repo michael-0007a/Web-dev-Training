@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="datamethod()">Get Current Date and Time</button>
+
+    <p id="demo"></p>
+    <p id="year"></p>
+    <p id="month"></p>
+    <p id="date"></p>
+
+<script>
+    function datamethod() {
+        var today = new Date();
+        document.getElementById("demo").innerHTML = today;
+        document.getElementById("year").innerHTML = today.getFullYear();
+        document.getElementById("month").innerHTML = today.getMonth() + 1; // Months are zero-based
+        document.getElementById("date").innerHTML = today.getDate();
+    }
+
+    </script>
+</body>
+</html>
