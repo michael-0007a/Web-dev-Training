@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    <label>ID: </label>
+    <input type="number" name="sid" id="sid">
+    <br>
+    <label>Name: </label>
+    <input type="text" name="sname" id="sname">
+    <br>
+    <label>Course: </label>
+    <input type="text" name="scourse" id="scourse">
+    <br>
+    <label>Fee: </label>
+    <input type="number" name="sfee" id="sfee">
+    <br>
+    <input type="button" value="Submit" onclick="jsonData()">
+</form>
+<script>
+    function jsonData() {
+        var std_obj = {
+            "sid": document.getElementById("sid").value,
+            "sname": document.getElementById("sname").value,
+            "scourse": document.getElementById("scourse").value,
+            "sfee": document.getElementById("sfee").value,
+        }
+        var std_arr = [];
+        std_arr.push(std_obj);
+        alert(JSON.stringify(std_arr));
+    }
+</script>
+</body>
+</html>

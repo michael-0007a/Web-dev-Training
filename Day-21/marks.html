@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Welcome to MRU!!</h1>
+<form action="" method="">
+    Enter name : <input type="text" name="name" id="name"><br>
+    Enter sub1 : <input type="text" name="a" id="a"><br>
+    Enter sub2 : <input type="text" name="b" id="b"><br>
+    Enter sub3 : <input type="text" name="c" id="c"><br>
+    <input type="button" value="Calculate" onclick="return calc()"><br>
+</form>
+<h2 id="result"></h2>
+<h2 id="total"></h2>
+<h2 id="avg"></h2>
+<h2 id="grade"></h2>
+<script>
+    function calc(){
+        // Clear previous results
+        document.getElementById("result").innerHTML = "";
+        document.getElementById("total").innerHTML = "";
+        document.getElementById("avg").innerHTML = "";
+        document.getElementById("grade").innerHTML = "";
+
+        var name = document.getElementById("name").value;
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+
+        var total = a + b + c;
+        var avg = total / 3;
+
+        document.getElementById("result").innerHTML = "Name : " + name + "<br>";
+        document.getElementById("total").innerHTML = "Total : " + total + " marks<br>";
+        document.getElementById("avg").innerHTML = "Avg : " + avg.toFixed(2) + "<br>";
+
+        if(avg >= 90){
+            document.getElementById("grade").innerHTML = "Grade : A";
+        }
+        else if(avg >= 80){
+            document.getElementById("grade").innerHTML = "Grade : B";
+        }
+        else if(avg >= 70){
+            document.getElementById("grade").innerHTML = "Grade : C";
+        }
+        else if(avg >= 60){
+            document.getElementById("grade").innerHTML = "Grade : D";
+        }
+        else{
+            document.getElementById("grade").innerHTML = "Grade : F";
+        }
+    }
+</script>
+</body>
+</html>
